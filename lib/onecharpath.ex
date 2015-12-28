@@ -1,7 +1,7 @@
 defmodule Onecharpath do
   def main([dictionary, first, last]) do
     words = File.read!(dictionary) |> String.split("\n")
-    build_graph(:digraph.new, words, []) |> :digraph.get_path(first, last) |> Enum.each(&IO.puts/1)
+    build_graph(:digraph.new, words, []) |> :digraph.get_short_path(first, last) |> Enum.each(&IO.puts/1)
   end
 
   def build_graph(g, [], _), do: g
