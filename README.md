@@ -11,5 +11,6 @@ mix escript.build
 ## Usage
 
 ```
-./onecharpath priv/BigDict.txt last face
+./onecharpath naive priv/BigDict.txt last face
+./onecharpath advanced priv/BigDict.txt last face
 ```
